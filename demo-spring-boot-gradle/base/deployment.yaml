@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: demo-spring-boot-gradle
+  name: demo-spring-boot-gradle
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: demo-spring-boot-gradle
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: demo-spring-boot-gradle
+    spec:
+      containers:
+      - image: ghcr.io/leandrosouzabc/demo-spring-boot-gradle:main
+        name: demo-spring-boot-gradle
+        resources: {}
+status: {}
