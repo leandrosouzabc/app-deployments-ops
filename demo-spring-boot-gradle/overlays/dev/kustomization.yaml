@@ -6,3 +6,7 @@ resources:
 replicas:
   - name: demo-spring-boot-gradle
     count: 1
+
+images:
+  - name: ghcr.io/leandrosouzabc/demo-spring-boot-gradle
+    newTag: v0.1.0 
