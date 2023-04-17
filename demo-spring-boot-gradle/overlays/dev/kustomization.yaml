@@ -9,4 +9,4 @@ replicas:
 
 images:
   - name: ghcr.io/leandrosouzabc/demo-spring-boot-gradle
-    newTag: v0.5.7
+    newTag: v0.5.9
